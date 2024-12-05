@@ -1,0 +1,14 @@
+name: "ci pipeline"
+
+on:
+    push:
+        branches:
+            - main
+            - master
+
+jobs:
+    hello_world:
+        runs-on: ubuntu-latest
+        steps:
+            - name: 'print system owner name'
+              run: echo 'Abhishek shamra'
